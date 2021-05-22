@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 50px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;
+padding: 10px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body >
+    <div style="background-color:#80ffff;">
+
+<h2>Bull's Eye Team</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card" >
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/1.gif" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/2.gif" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+  </div>
+  
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Description of Card 1</h3>
+      <p>Primary health care is the most efficient and effective way to achieve health for all.But too often, it is the most under-resourced part of the health system.
+        We must act now to ensure no-one is left behind.</p>
+      <p>It is the most under-resourced part of the health system.</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Description of Card 2</h3>
+      <p>Multisectoral actions and policies that address the underlying causes of poor health are needed to make health for all a reality.</p>
+      
+      <p>The World Health Organization is a specialized agency of the United Nations responsible for international public health.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
